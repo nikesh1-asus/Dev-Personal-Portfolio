@@ -64,21 +64,19 @@ export const Hero = () => {
     >
 
       {/* SOCIAL DESKTOP */}
-      {location.pathname === "/" && (
-        <div className="hidden md:flex flex-col gap-4 fixed left-4 top-1/2 transform -translate-y-1/2 z-[1000]">
-          {socialLinks.map((link, idx) => (
-            <a
-              key={idx}
-              href={link.href}
-              target="_blank"
-              rel="noreferrer"
-              className="glow-btn text-xl p-2 hover:scale-110 transition"
-            >
-              {link.icon}
-            </a>
-          ))}
-        </div>
-      )}
+      <div className="hidden md:flex flex-col gap-4 fixed left-4 top-1/2 transform -translate-y-1/2 z-[1000]">
+        {socialLinks.map((link, idx) => (
+          <a
+            key={idx}
+            href={link.href}
+            target="_blank"
+            rel="noreferrer"
+            className="glow-btn text-xl p-2 hover:scale-110 transition"
+          >
+            {link.icon}
+          </a>
+        ))}
+      </div>
 
       {/* TEXT */}
       <div className="w-full md:w-[42%] flex flex-col items-center text-center order-2 md:order-1">
@@ -122,21 +120,19 @@ export const Hero = () => {
         </div>
 
         {/* MOBILE SOCIAL */}
-        {location.pathname === "/" && (
-          <div className="flex md:hidden gap-6 mt-4 justify-center">
-            {socialLinks.map((link, idx) => (
-              <a
-                key={idx}
-                href={link.href}
-                target="_blank"
-                rel="noreferrer"
-                className="glow-btn text-xl p-2"
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
-        )}
+        <div className="flex md:hidden gap-6 mt-4 justify-center">
+          {socialLinks.map((link, idx) => (
+            <a
+              key={idx}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              className="glow-btn text-xl p-2"
+            >
+              {link.icon}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* IMAGE (FIXED) */}

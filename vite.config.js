@@ -12,5 +12,6 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Dev-Personal-Portfolio/", // MUST match repo name exactly
+  base: "/Dev-Personal-Portfolio/", // Match repository name exactly
+  publicDir: "public",
 });
