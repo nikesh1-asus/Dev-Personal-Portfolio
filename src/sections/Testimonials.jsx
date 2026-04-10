@@ -131,7 +131,7 @@ export const Testimonials = () => {
                   <img
                     src={t.image}
                     alt={t.name}
-                    className="w-48 h-48 md:w-60 md:h-60 object-cover rounded-full animate-float border border-border bg-background"
+                    className="w-48 h-56 md:w-56 md:h-64 object-cover rounded-2xl animate-float border border-border bg-background"
                     loading="lazy"
                   />
                 </div>
